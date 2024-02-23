@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">2340Project_1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_page">College Scheduler</string>
+    <string name="class_schedule">Class Schedule</string>
+    <string name="exams">Exams</string>
+    <string name="assignments">Assignments</string>
+    <string name="to_do">To-Do</string>
+    <string name="title_activity_class_schedule">ClassSchedule</string>
+    <string name="Tasks">Tasks</string>
+    <string name="date">Date</string>
+    <string name="edit_class">Edit Class</string>
+    <string name="delete_class">Delete Class</string>
+    <string name="color">Color:</string>
+    <string name="professor">Professor:</string>
+    <string name="click_here">Click Here</string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BEBEBE"
+    android:backgroundTint="#BEBEBE"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextAssignmentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#03A9F4"
+        android:hint="Assignment Title"
+        android:fontFamily="sans-serif-medium"/>
+
+    <EditText
+        android:id="@+id/editTextDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAssignmentTitle"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#03A9F4"
+        android:hint="Due Date (DD-MM-YYYY)"
+        android:fontFamily="sans-serif-medium" />
+
+    <EditText
+        android:id="@+id/editTextCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDueDate"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#03A9F4"
+        android:hint="Course"
+        android:fontFamily="sans-serif-medium" />
+
+    <Button
+        android:id="@+id/buttonAddAssignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCourse"
+        android:layout_marginLeft="200dp"
+        android:backgroundTint="#03A9F4"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="addAssignment"
+        android:text="Add Assignment"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+
+    <Spinner
+        android:id="@+id/spinnerSort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAddAssignment"
+        android:layout_marginTop="16dp" />
+
+    <ListView
+        android:id="@+id/listViewAssignments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/spinnerSort"
+        android:layout_marginTop="16dp"
+        />
+
+    <Button
+        android:id="@+id/backButtonAssignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCourse"
+        android:layout_marginLeft="60dp"
+        android:backgroundTint="#03A9F4"
+        android:fontFamily="sans-serif-medium"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+
+</RelativeLayout>

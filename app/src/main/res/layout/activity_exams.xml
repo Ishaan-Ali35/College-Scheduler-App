@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BEBEBE"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Course Name"
+        android:fontFamily="sans-serif-medium"
+        android:backgroundTint="#03A9F4"/>
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCourse"
+        android:layout_margin="16dp"
+        android:hint="Date (DD-MM-YYYY)"
+        android:fontFamily="sans-serif-medium"
+        android:backgroundTint="#03A9F4"/>
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDate"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Time (HH:MM)"
+        android:fontFamily="sans-serif-medium"
+        android:backgroundTint="#03A9F4"/>
+
+    <EditText
+        android:id="@+id/editTextLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTime"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Location"
+        android:fontFamily="sans-serif-medium"
+        android:backgroundTint="#03A9F4"/>
+
+    <Button
+        android:id="@+id/buttonAddExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLocation"
+        android:layout_marginLeft="235dp"
+        android:onClick="addExam"
+        android:fontFamily="sans-serif-medium"
+        android:backgroundTint="#03A9F4"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:text="Add Exam" />
+
+    <Button
+        android:id="@+id/backButtonExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLocation"
+        android:layout_marginLeft="60dp"
+        android:backgroundTint="#03A9F4"
+        android:fontFamily="sans-serif-medium"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+
+    <ListView
+        android:id="@+id/listViewExams"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buttonAddExam"
+        android:layout_marginTop="16dp" />
+
+
+</RelativeLayout>
